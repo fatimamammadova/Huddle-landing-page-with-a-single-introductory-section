@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    position: relative;
+    z-index: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+.background {
+    padding: 64px 80px;
+    background: url("bg-desktop.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+header .logo img {
+    margin-bottom: 104px;
+    width: 230px;
+    height: 52px;
+    margin-left: 0;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .image img {
+    width: 646px;
+    height: 443px;
+}
+main .about {
+    margin-left: 60px;
+    height: 450px;
+}
+main .about .head {
+    width: 500px;
+}
+main .about h1 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+main .content {
+    width: 520px;
+    margin-bottom: 30px;
+}
+.buton button {
+    width: 200px;
+    height: 56px;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.buton button:hover {
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+}
+.smedia {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.smedia i {
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 7px;
+    margin-right: 15px;
+}
+.smedia i:first-child {
+    padding: 7px 12px;
+}
+.smedia i:last-child {
+    padding: 7px 9px;
+}
+.smedia i:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+@media (max-width: 750px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        min-height: 1600px;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .background {
+        background: url("bg-mobile.svg");
+        padding: 64px 80px;
+        height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 50px;
+    }
+    header .logo img {
+        margin-bottom: 80px;
+        margin-top: 600px;
+    }
+    main .about h1 {
+        font-size: 45px;
+        margin-bottom: 35px;
+    }
+    main .head {
+        width: 650px;
+    }
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 125px;
+    }
+    main .image img {
+        width: 592px;
+        height: 418px;
+    }
+    main .about {
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 0;
+    }
+    main .content  {
+        width: 480px;
+        font-size: 25px;
+        line-height: 1.5;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .buton button {
+        width: 400px;
+        height: 80px;
+        border-radius: 55px;
+        font-size: 24px;
+    }
+    .smedia {
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .smedia i {
+        font-size: 30px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 10px;
+        margin-right: 0;
+    }
+    .smedia i:first-child {
+        margin-right: 30px;
+        padding: 10px 15px;
+    }
+    .smedia i:last-child {
+        margin-left: 30px;
+        padding: 10px 12px;
+    }
+
+}
